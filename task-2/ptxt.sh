@@ -2,7 +2,6 @@
 text="$6"
 while [ -n "$1" ]
 do
-	
 	case "$1" in
 	-n)
 		for i in `seq "$2"`
@@ -13,6 +12,7 @@ do
 		;;
 	-t)
 		sleep "$2"
+		shift
 		;;
 	--)
 		shift
@@ -20,7 +20,7 @@ do
 		;;
 	*)
 		echo "Invalid argument"
-		echo "usage $0 -n <number of text output> -t <output timeout> -- <text to output>"
+		echo "usage bash $0 -n <number of text output> -t <output timeout> -- <text to output>"
 		exit 1
 		;;
 	esac
