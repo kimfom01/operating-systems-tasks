@@ -25,11 +25,8 @@ do
     esac
 done
 
-for i in `seq "$OUTPUTTIMEOUT"`
+for i in `seq "$NUMBEROFTEXTOUTPUT"`
 do
-    for i in `seq "$NUMBEROFTEXTOUTPUT"`
-    do
-        echo "$text"
-    done
+    echo "$text"
     sleep $OUTPUTTIMEOUT
 done
