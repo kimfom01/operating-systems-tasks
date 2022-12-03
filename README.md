@@ -27,9 +27,9 @@ to use arrays and array sorting by any method
 Learn the theory from the attached file and write programs for Linux in C
 
 1. The prntxt program, which accepts the number of repetitions, the timeout value and the text in the command line parameters, and then prints a line of text to the screen a specified number of times with a specified timeout. Support both short and long options. Call syntax  
-`prntxt -n|--number <number of repetitions> [-t|--timeout [<timeout>]] -- <arbitrary text>`
+`prntxt -n|--number <number of repetitions> [-t|--timeout [<timeout>]] -- <arbitrary text>`  
 The value of the `<timeout>` parameter is optional, by default 1 second. When calling prntxt without the `-t|--timeout` parameter, output text without timeout. When calling prntxt without the `-n|--number` parameter, or if no text is specified for output, output an error message and a syntax hint (`usage: prntxt -n|--number <N> [-t|--timeout [<T>]] -- <TEXT>`)
 
-2. The launch program, which takes in the first command-line parameter the file name of the program to run and in the second command-line parameter the file name.
-launch `<prog> <file>`
+2. The launch program, which takes in the first command-line parameter the file name of the program to run and in the second command-line parameter the file name.  
+launch `<prog> <file>`  
 The launch program should launch the `<prog>` program in the child process and redirect the standard output of the running program to the `<file>` file, wait for the child process to complete and display the PID and return code of the completed process.
