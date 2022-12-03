@@ -67,6 +67,10 @@ int main(int argc, char *argv[])
     return 0;
 }
 
-// gcc prntxt.c -o prntxt && ./prntxt -n 5 -t 3 -- "Hello"
-// gcc prntxt.c -o prntxt && ./prntxt -n 5 -t -- "Hello" uses default timout value
-// gcc prntxt.c -o prntxt && ./prntxt -n -t 3 -- "Hello" error
+// gcc prntxt.c -o prntxt && ./prntxt -n 3 -t 3 -- "Sample Text"
+// gcc prntxt.c -o prntxt && ./prntxt -n 3 -t -- "Sample Text" uses default timeout value
+// gcc prntxt.c -o prntxt && ./prntxt -n -t 3 -- "Sample Text" error
+
+// gcc prntxt.c -o prntxt && ./prntxt --number 3 --timeout 3 -- "Sample Text"
+// gcc prntxt.c -o prntxt && ./prntxt -n 3 -t -- "Sample Text" uses default timeout value
+// gcc prntxt.c -o prntxt && ./prntxt -n -t 3 -- "Sample Text" error
