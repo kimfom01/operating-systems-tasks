@@ -1,6 +1,7 @@
-# operations-systems-assignment
+# Operating Systems Tasks (Linux)
 
 ## Task 1
+
 1. Output all script arguments in reverse order
 Note: use the while loop
 
@@ -13,6 +14,7 @@ Note: use if
 Instruction: use case and substitution of expr command
 
 ## Task 2
+
 1. Write a txt script that displays the specified text a specified number of times after a specified time interval. Provide the following call syntax  
 `ptxt -n <number of text outputs> -t <output timeout> -- <text to output>`  
 use case and shift commands to get parameters
@@ -24,6 +26,7 @@ use getopt
 to use arrays and array sorting by any method
 
 ## Task 4
+
 Learn the theory from the attached file and write programs for Linux in C
 
 1. The prntxt program, which accepts the number of repetitions, the timeout value and the text in the command line parameters, and then prints a line of text to the screen a specified number of times with a specified timeout. Support both short and long options. Call syntax  
