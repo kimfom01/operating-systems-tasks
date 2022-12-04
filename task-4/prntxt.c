@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
             printf("usage: prntxt -n|--number <N> [-t|--timeout [<T>]] -- <TEXT>");
             return 1;
         default:
-            abort();
+            return EXIT_FAILURE;
         }
     }
 
