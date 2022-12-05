@@ -4,9 +4,9 @@
 
 int main(int argc, char *argv[])
 {
-    int tmp = open(argv[1], O_WRONLY | O_CREAT);//, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
-
-    // write()
+    close(2);
+    
+    int tmp = open(argv[1], O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
 
     dup2(tmp, 2);
 
