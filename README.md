@@ -39,19 +39,21 @@ The launch program should launch the `<prog>` program in the child process and r
 
 ## Task 5
 
-Изучить теорию из присоединенного файла и выполнить следующие задания:
+Study the theory from the attached file and complete the following tasks:
 
-1. написать программу для Linux, которая выполняет следующие действия:
-   - Создает дочерний процесс, который каждые 3 секунды посылает сигнал `SIGUSR1` родительскому процессу
-   - Создает в текущем каталоге именованный канал с именем reqests и открывает его для чтения
-   - Создает сигнальные дескрипторы для обработки сигналов `SIGINT` и `SIGUSR1`
-   - Используя poll ожидает в цикле на дескрипторах сигналов и канала
-   - При получении сигнала `SIGUSR1` выводит имя полученного сигнала на экран
-   - При получении сигнала `SIGINT` завершает цикл ожидания
-   - После завершения цикла ожидания посылает сигнал `SIGTERM` дочернему процессу
-   - Ждет завершение дочернего процесса и выводит на экран его код завершения
-   - Удаляет ранее созданный именованный канал reqests и завершается
-2. Исправить (добавить семафор) в приведенную программу, чтобы исключить конфликт родительского и дочернего процессов при выводе текста на экран. Каждая строчка должна содержать или 10 символов 'P' или 10 символов 'C', символы не должны смешиваться в одной строке.
+1. Write a program for Linux that performs the following actions:
+
+- Creates a child process that sends a `SIGUSR1` signal to the parent process every 3 seconds
+  - Creates a named pipe named reqests in the current directory and opens it for reading
+  - Creates signal descriptors for processing signals `SIGINT` and `SIGUSR1`
+  - Using poll waits in a loop on signal and channel descriptors
+  - When a signal is received, `SIGUSR1` displays the name of the received signal on the screen
+  - When a signal is received, `SIGINT` completes the waiting cycle
+  - After the end of the waiting cycle, it sends a `SIGTERM` signal to the child process
+  - Waits for the child process to finish and displays its completion code
+  - Deletes the previously created named channel reqests and terminates
+
+2. Fix (add a semaphore) to the above program to eliminate the conflict of parent and child processes when displaying text on the screen. Each line must contain either 10 characters 'P' or 10 characters 'C', the characters must not be mixed in one line.
 
 ```
 # include <stdio.h>
