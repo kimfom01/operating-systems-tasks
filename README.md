@@ -43,7 +43,7 @@ Study the theory from the attached file and complete the following tasks:
 
 1. Write a program for Linux that performs the following actions:
 
-- Creates a child process that sends a `SIGUSR1` signal to the parent process every 3 seconds
+  - Creates a child process that sends a `SIGUSR1` signal to the parent process every 3 seconds
   - Creates a named pipe named reqests in the current directory and opens it for reading
   - Creates signal descriptors for processing signals `SIGINT` and `SIGUSR1`
   - Using poll waits in a loop on signal and channel descriptors
